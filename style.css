@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Roboto;
+  color: #555;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, #fbac43, #ff8f00);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 80rem;
+  padding: 3rem 4rem 4rem 4rem;
+  border: 3.5rem solid #eee;
+  background-color: #fff;
+  box-shadow: 0 3rem 8rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/****** HEADER ******/
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.header__logo {
+  height: 7rem;
+  margin-right: 2.5rem;
+  display: inline-block;
+}
+
+.header__heading {
+  font-size: 2.5rem;
+}
+
+/****** PRICE ******/
+
+.price {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.price__bought {
+  margin-right: 3rem;
+}
+
+.price__label {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 1.4rem;
+}
+
+.price__input,
+.investment__btc {
+  padding: 1rem;
+  font-size: 1.3rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+
+.price__input::placeholder,
+.investment__btc::placeholder {
+  color: #ccc;
+}
+
+.price__input:focus,
+.investment__btc:focus {
+  color: #555;
+  outline: none;
+  border: 1px solid #fc9d22;
+}
+
+/****** INVESTMENT ******/
+
+.investment {
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.investment > *:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.investment__text {
+  font-size: 1.8rem;
+}
+
+.investment__btc {
+  font-size: 1.8rem;
+}
+
+.investment__btn {
+  display: inline-block;
+  font-size: 1.6rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #fc9d22;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.investment__btn:hover {
+  background-color: #ff8f00;
+}
+
+.investment__btn:active {
+  transform: translateY(3px);
+}
+
+.investment__btn:focus {
+  outline: none;
+}
+
+/****** RESULT ******/
+
+.result {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
